@@ -3,8 +3,11 @@ title: IndexedDB ---What? When? How?
 description: Brief intro of indexedDB browser API
 categories:
  - knowledge
-tags:indexedDB, Browser API
+tags:
+ - indexedDB
+ - Browser API
 ---
+
 # IndexedDB
 IndexedDB is client-side storage solution provided by browser to store structured data ( including files/blobs ). It is a transactional database similar to MySql but it stores JSON objects. it uses indexes to allow fast searches in data.
 Other notable storage options available in browser include localstorage, session storage, cookies etc. 
@@ -16,7 +19,7 @@ Now that we know a little bit about indexedDB lets see how to use it in our code
 # Usage
  refer [this link](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API/Using_IndexedDB) on how to use indexedDB in your project.
  
- ## Performing a wildcard search in indexDB
+## Performing a wildcard search in indexDB
   ```sh
   var result = [];
 db.transaction(['table'], 'readonly')
@@ -43,7 +46,7 @@ db.transaction(['table'], 'readonly')
   ```
   [stackoverflow link](https://stackoverflow.com/questions/7086180/indexeddb-fuzzy-search)
   
- ## performing queries on multiple conditions 
+## Performing queries on multiple conditions 
   ```sh
   // In onupgradeneeded
 var store = db.createObjectStore('mystore');
